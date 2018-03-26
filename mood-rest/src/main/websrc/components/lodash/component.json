@@ -1,0 +1,11 @@
+{
+    "repos": "https://github.com/lodash/lodash.git",
+    "description": "The modern build of lodash modular utilities.",
+    "name": "lodash",
+    "main": "index.js",
+    "umd2commonjs": null,
+    "version": "3.10.1",
+    "tag": "master",
+    "reposType": "npm",
+    "dependencies": {}
+}
