@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" style="display:none">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>供应商入驻</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="modules/css/less/ydui.less">
+    <link rel="stylesheet" href="modules/css/wap.css">
+  </head>
+
+  <body>
+    <img src="/modules/images/x.png" id="mapIcon" style="display:none">
+    <div class="g-map g-flexview" id="modalMap">
+      <header class="m-navbar">
+        <div class="navbar-center">
+          <span class="navbar-title">选择位置</span>
+        </div>
+        <a href="javascript:;" id="selectd" class="navbar-item" style="display:none">确定</a>
+      </header>
+
+      <div class="g-scrollview">
+        <div id="allmap"></div>
+      </div>
+    </div>
+
+    <div class="g-flexview">
+      <header class="m-navbar">
+        <a href="index.html" class="navbar-item"><i class="back-ico"></i>返回</a>
+        <div class="navbar-center">
+          <span class="navbar-title">入驻</span>
+        </div>
+      </header>
+
+      <div class="g-scrollview">
+        <form id="J_form">
+          <div class="m-cell demo-small-pitch">
+            <div class="cell-item">
+              <div class="cell-right cell-arrow">
+                <input type="text" name="companyName" class="cell-input" placeholder="公司名称" autocomplete="off" />
+              </div>
+            </div>
+            <div class="cell-item">
+              <div class="cell-right cell-arrow">
+                <input type="tel" name="companyPhone" class="cell-input" placeholder="公司电话" autocomplete="off" />
+              </div>
+            </div>
+            <div class="cell-item">
+              <div class="cell-right cell-arrow">
+                <input type="text" name="name" class="cell-input" placeholder="联系人" autocomplete="off" />
+              </div>
+            </div>
+            <div class="cell-item">
+              <div class="cell-right cell-arrow">
+                <input type="tel" name="mobile" class="cell-input" placeholder="联系电话" autocomplete="off" />
+              </div>
+            </div>
+            <div class="cell-item">
+              <div class="cell-right cell-arrow" id="J_Address">
+                <input type="text" name="cityId" class="cell-input" readonly placeholder="所在地区" autocomplete="off">
+              </div>
+            </div>
+          </div>
+          <div class="m-cell demo-small-pitch">
+            <label class="cell-item">
+                <span class="cell-left">运营商</span>
+                <label class="cell-right">
+                    <input type="radio" value="1" name="radio" checked/>
+                    <i class="cell-radio-icon"></i>
+                </label>
+            </label>
+            <label class="cell-item">
+                <span class="cell-left">供应商</span>
+                <label class="cell-right">
+                    <input type="radio" value="2" name="radio"/>
+                    <i class="cell-radio-icon"></i>
+                </label>
+            </label>
+          </div>
+        </form>
+        <div class="m-button">
+          <button type="submit" class="btn-block btn-warning" id="J_post">立即加入</button>
+        </div>
+      </div>
+
+    </div>
+
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G8f81AnECGpHnIz7QmvUiwVreCkZuuzj"></script>
+    <script src="lib/mod.js"></script>
+    <script>
+      require.async('modules/app/wap.es');
+    </script>
+    <!--SCRIPT_PLACEHOLDER-->
+  </body>
+
+</html>

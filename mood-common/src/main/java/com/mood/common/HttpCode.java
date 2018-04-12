@@ -32,10 +32,15 @@ public enum HttpCode {
      * 登录code
      */
     LOGIN_ERROR(20001, "用户名或密码错误"),
-    LOGIN_DISABLED(20002, "登录失败次数超过5次，请15分钟后重新登录"),
-    INDEX_VIDEO_SETTING_ERROR(20003, "首页视频未配置"),
-    LOGIN_USER_ERROR(20004, "用户名不存在"),
+    LOGIN_DISABLED(20002, "登录失败次数超过3次，请15分钟后重新登录"),
+    LOGIN_ONLINE(20003, "用户已经在线"),
+    LOGIN_NEVER_USER(20004, "用户不存在"),
     LOGIN_USER_STATE(20005, "用户为禁用状态"),
+
+    /**
+     * 注册code
+     */
+    REGISTER_HAVE_USER(20010, "该账号已注册"),
     ;
 
     private int code;

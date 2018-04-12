@@ -1,0 +1,13 @@
+#extends("page/layout/front.vm")
+
+#block("content")
+
+<div id="index">
+    首页
+</div>
+
+#end## end of body
+
+  ## auto inject by fis3-preprocess-extlang
+  #require("page/index/index.vm")
+#end

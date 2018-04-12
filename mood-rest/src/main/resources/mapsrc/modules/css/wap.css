@@ -1,0 +1,33 @@
+.demo-small-pitch {
+  margin-top: .35rem;
+}
+
+.error input, .error input::-webkit-input-placeholder {
+  color: #EF4F4F
+}
+
+input[readonly] {
+  pointer-events: none;
+  color: #555555 !important
+}
+
+.g-map {
+  position: fixed;
+  top: 100%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0 auto;
+  z-index: 999;
+  transition-duration: 0.5s;
+}
+
+.g-map.open {
+  top: 0;
+}
+
+#allmap {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}

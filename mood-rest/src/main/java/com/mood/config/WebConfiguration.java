@@ -1,9 +1,9 @@
 package com.mood.config;
 
+import com.baidu.fis.velocity.spring.FisBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.filter.CharacterEncodingFilter;
-
 import javax.servlet.Filter;
 
 
@@ -19,6 +19,11 @@ class WebConfiguration {
         characterEncodingFilter.setEncoding("UTF-8");
         characterEncodingFilter.setForceEncoding(true);
         return characterEncodingFilter;
+    }
+
+    @Bean
+    public FisBean fisBean() {
+        return new FisBean();
     }
 
 }

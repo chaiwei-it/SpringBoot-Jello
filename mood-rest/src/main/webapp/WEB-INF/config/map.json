@@ -1,0 +1,469 @@
+{
+    "res": {
+        "components/amaze/assets/css/admin.css": {
+            "uri": "/static/components/amaze/assets/css/admin.css",
+            "type": "css"
+        },
+        "components/amaze/assets/css/amazeui.css": {
+            "uri": "/static/components/amaze/assets/css/amazeui.css",
+            "type": "css"
+        },
+        "components/amaze/assets/css/amazeui.flat.css": {
+            "uri": "/static/components/amaze/assets/css/amazeui.flat.css",
+            "type": "css"
+        },
+        "components/amaze/assets/css/amazeui.flat.min.css": {
+            "uri": "/static/components/amaze/assets/css/amazeui.flat.min.css",
+            "type": "css"
+        },
+        "components/amaze/assets/css/amazeui.min.css": {
+            "uri": "/static/components/amaze/assets/css/amazeui.min.css",
+            "type": "css"
+        },
+        "components/amaze/assets/css/app.css": {
+            "uri": "/static/components/amaze/assets/css/app.css",
+            "type": "css"
+        },
+        "components/amaze/assets/js/amazeui.ie8polyfill.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.ie8polyfill.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui.ie8polyfill"
+            }
+        },
+        "components/amaze/assets/js/amazeui.ie8polyfill.min.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.ie8polyfill.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui.ie8polyfill.min"
+            }
+        },
+        "components/amaze/assets/js/amazeui.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/amaze/assets/js/amazeui.min.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui.min"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
+        },
+        "components/amaze/assets/js/amazeui.widgets.helper.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.widgets.helper.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui.widgets.helper"
+            }
+        },
+        "components/amaze/assets/js/amazeui.widgets.helper.min.js": {
+            "uri": "/static/components/amaze/assets/js/amazeui.widgets.helper.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/amazeui.widgets.helper.min"
+            }
+        },
+        "components/amaze/assets/js/app.js": {
+            "uri": "/static/components/amaze/assets/js/app.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/app"
+            }
+        },
+        "components/amaze/assets/js/handlebars.min.js": {
+            "uri": "/static/components/amaze/assets/js/handlebars.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/amaze/assets/js/handlebars.min"
+            }
+        },
+        "components/app/api.js": {
+            "uri": "/static/components/app/api.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/app/api"
+            }
+        },
+        "components/app/app.js": {
+            "uri": "/static/components/app/app.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/app/app"
+            },
+            "deps": [
+                "components/jquery/jquery-3.3.1.min.js",
+                "components/lodash/index.js",
+                "components/amaze/assets/js/amazeui.min.js"
+            ]
+        },
+        "components/css/app.css": {
+            "uri": "/static/components/css/app.css",
+            "type": "css"
+        },
+        "components/jquery/jquery-3.3.1.min.js": {
+            "uri": "/static/components/jquery/jquery-3.3.1.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery-3.3.1.min"
+            }
+        },
+        "components/jquery/jquery.js": {
+            "uri": "/static/components/jquery/jquery.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery/jquery"
+            }
+        },
+        "components/js/fileup.js": {
+            "uri": "/static/components/js/fileup.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/js/fileup"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "components/lodash/index.js": {
+            "uri": "/static/components/lodash/index.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/lodash/index"
+            }
+        },
+        "page/html/index.html": {
+            "uri": "/page/html/index.html",
+            "type": "html",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/index/index.js": {
+            "uri": "/static/page/index/index_948853a.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/index/index"
+            }
+        },
+        "page/index/index.scss": {
+            "uri": "/static/page/index/index.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/index/index.vm": {
+            "uri": "/page/index/index.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-left-sidebar.vm": {
+            "uri": "/page/layout/2columns-with-left-sidebar.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/2columns-with-right-sidebar.vm": {
+            "uri": "/page/layout/2columns-with-right-sidebar.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/3columns.vm": {
+            "uri": "/page/layout/3columns.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/ajax.vm": {
+            "uri": "/page/layout/ajax.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/frame.vm": {
+            "uri": "/page/layout/frame.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/front.vm": {
+            "uri": "/page/layout/front.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/main.vm": {
+            "uri": "/page/layout/main.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/smart.vm": {
+            "uri": "/page/layout/smart.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/layout/spa.vm": {
+            "uri": "/page/layout/spa.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/login/login.js": {
+            "uri": "/static/page/login/login_829d785.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/login/login"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "page/login/login.scss": {
+            "uri": "/static/page/login/login.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/login/login.vm": {
+            "uri": "/page/login/login.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/login/login.js"
+                ]
+            }
+        },
+        "page/news/news.scss": {
+            "uri": "/static/page/news/news.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/news/news.vm": {
+            "uri": "/page/news/news.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/user/login.js": {
+            "uri": "/static/page/user/login_1be6f18.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/user/login"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "page/user/login.scss": {
+            "uri": "/static/page/user/login.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/user/login.vm": {
+            "uri": "/page/user/login.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/user/login.js"
+                ]
+            }
+        },
+        "page/velocity/index.vm": {
+            "uri": "/page/velocity/index.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/jello.vm": {
+            "uri": "/page/velocity/jello.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/news.scss": {
+            "uri": "/static/page/velocity/news.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/velocity/tools.vm": {
+            "uri": "/page/velocity/tools.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "page/velocity/variables.vm": {
+            "uri": "/page/velocity/variables.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true
+            }
+        },
+        "static/js/esl.js": {
+            "uri": "/static/js/esl.js",
+            "type": "js"
+        },
+        "static/js/mod-amd.js": {
+            "uri": "/static/js/mod-amd.js",
+            "type": "js"
+        },
+        "static/js/require.js": {
+            "uri": "/static/js/require.js",
+            "type": "js"
+        },
+        "static/libs/alert.js": {
+            "uri": "/static/libs/alert.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/alert"
+            },
+            "deps": [
+                "bootstrap",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/confirm.js": {
+            "uri": "/static/libs/confirm.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/confirm"
+            },
+            "deps": [
+                "bootstrap",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/modal.js": {
+            "uri": "/static/libs/modal.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/modal"
+            },
+            "deps": [
+                "font-awesome/css/font-awesome.css",
+                "bootstrap",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/scrollspy.js": {
+            "uri": "/static/libs/scrollspy.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/scrollspy"
+            },
+            "deps": [
+                "bootstrap",
+                "components/jquery/jquery.js"
+            ]
+        },
+        "static/libs/validator.js": {
+            "uri": "/static/libs/validator.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "static/libs/validator"
+            },
+            "deps": [
+                "components/jquery/jquery.js",
+                "jquery-validation",
+                "jquery-validation/localization/messages_zh"
+            ]
+        },
+        "static/scss/global.scss": {
+            "uri": "/static/scss/global.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "widget/footer/footer.scss": {
+            "uri": "/static/widget/footer/footer.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "widget/footer/footer.vm": {
+            "uri": "/widget/footer/footer.vm",
+            "type": "vm"
+        },
+        "widget/header/header.scss": {
+            "uri": "/static/widget/header/header.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "widget/header/header.vm": {
+            "uri": "/widget/header/header.vm",
+            "type": "vm"
+        },
+        "widget/navigation/navigation.vm": {
+            "uri": "/widget/navigation/navigation.vm",
+            "type": "vm"
+        },
+        "widget/sidebarmenus/sidebarmenus.js": {
+            "uri": "/static/widget/sidebarmenus/sidebarmenus_f113ce8.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "widget/sidebarmenus/sidebarmenus"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "widget/sidebarmenus/sidebarmenus.scss": {
+            "uri": "/static/widget/sidebarmenus/sidebarmenus.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "widget/sidebarmenus/sidebarmenus.vm": {
+            "uri": "/widget/sidebarmenus/sidebarmenus.vm",
+            "type": "vm",
+            "extras": {
+                "async": [
+                    "widget/sidebarmenus/sidebarmenus.js"
+                ]
+            }
+        }
+    },
+    "pkg": {
+        "p0": {
+            "uri": "/static/pkg/frame.css",
+            "type": "css",
+            "has": [
+                "static/scss/global.scss",
+                "widget/footer/footer.scss",
+                "widget/header/header.scss",
+                "widget/sidebarmenus/sidebarmenus.scss",
+                "page/index/index.scss",
+                "page/login/login.scss",
+                "page/news/news.scss",
+                "page/user/login.scss",
+                "page/velocity/news.scss"
+            ]
+        }
+    }
+}

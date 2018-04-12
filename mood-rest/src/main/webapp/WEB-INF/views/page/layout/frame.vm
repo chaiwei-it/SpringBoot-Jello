@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+#html("static/js/require.js")
+
+    #head()
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>$title</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/static/images/logo-title.png" />
+        <link rel="stylesheet" href="/static/components/amaze/assets/css/amazeui.min.css">
+        <link rel="stylesheet" href="/static/components/amaze/assets/css/app.css">
+        #require("components/amaze/assets/css/amazeui.css")
+        #require("/components/amaze/assets/css/amazeui.chosen.css")
+        #require("/components/amaze/assets/css/amazeui.cropper.css")
+        #require("/components/amaze/assets/css/custom_up_img.css")
+        #require("/static/scss/normalize.css")
+        #require("static/scss/global.scss")
+    #end## end head
+
+    #body()
+        <div id="wrapper">
+            ## 定义一个区域
+            #block("body")#end
+        </div>
+    #end## end of body
+
+
+  ## auto inject by fis3-preprocess-extlang
+  #require("page/layout/frame.vm")
+#end## end of html

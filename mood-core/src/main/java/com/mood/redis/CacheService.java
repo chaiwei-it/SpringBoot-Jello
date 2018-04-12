@@ -14,4 +14,8 @@ public interface CacheService<K, V> {
 	boolean exists(K key);
 
 	void del(K key);
+
+	Integer getInteger(String key);
+
+	String getString(String key);
 }

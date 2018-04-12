@@ -1,0 +1,1 @@
+define("page/index/index",["require","exports","module"],function(){});

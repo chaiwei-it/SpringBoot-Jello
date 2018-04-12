@@ -1,0 +1,42 @@
+{
+  "name": "fis3-base",
+  "version": "0.1.0",
+  "description": "基于fis3的纯前端解决方案，拿来即用的fis3脚手架。",
+  "main": "fis-conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "fis3 server start",
+    "re": "fis3 release",
+    "re:w": "fis3 release -w",
+    "open": "fis3 server open",
+    "dist": "fis3 release prod",
+    "clean": "fis3 server clean"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yanhaijing/fis3-base.git"
+  },
+  "author": {
+    "name": "yanhaijing",
+    "email": "yanhaijing@yeah.net"
+  },
+  "license": [
+    {
+      "type": "MIT"
+    }
+  ],
+  "dependencies": {
+    "fis-parser-babel-5.x": "^1.4.0",
+    "fis-parser-less": "^0.1.3",
+    "fis-parser-node-sass": "^1.0.1",
+    "fis3-deploy-skip-packed": "^0.0.5",
+    "fis3-hook-commonjs": "^0.1.26",
+    "fis3-hook-relative": "^2.0.0",
+    "fis3-postpackager-loader": "^2.1.4",
+    "fis3-preprocessor-js-require-css": "^0.1.1",
+    "fis3-preprocessor-js-require-file": "^0.1.3"
+  }
+}

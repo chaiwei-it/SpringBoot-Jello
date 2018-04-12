@@ -1,0 +1,1 @@
+define("components/amaze/assets/js/app",["require","exports","module"],function(){!function(e){"use strict";e(function(){var n=e(".admin-fullText");e("#admin-fullscreen").on("click",function(){e.AMUI.fullscreen.toggle()}),e(document).on(e.AMUI.fullscreen.raw.fullscreenchange,function(){n.text(e.AMUI.fullscreen.isFullscreen?"退出全屏":"开启全屏")})})}(jQuery)});

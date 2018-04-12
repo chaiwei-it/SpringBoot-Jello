@@ -14,6 +14,7 @@ import org.springframework.context.annotation.ImportResource;
  */
 @SpringBootApplication
 @MapperScan("com.mood.**.dao.mapper")
+@ImportResource("classpath:velocity.xml")
 public class Application extends SpringBootServletInitializer {
 
     @Override

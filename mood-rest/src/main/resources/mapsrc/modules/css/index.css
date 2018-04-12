@@ -1,0 +1,70 @@
+html, body {
+  overflow: hidden;
+}
+
+.swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  font-size: 18px;
+  color: #fff;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 40px 60px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.swiper-slide .title {
+  font-size: .5rem;
+  font-weight: 300;
+}
+
+.swiper-slide .subtitle {
+  padding-top: 1rem;
+  font-size: 21px;
+}
+
+.tabbar-item.tabbar-active {
+  color: #ef4f4f
+}
+
+.header {
+  background-color: transparent
+}
+
+.header .op_change {
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: #fff;
+  opacity: 0;
+  z-index: 10;
+}
+
+.op_change~div {
+  z-index: 11
+}
+
+.header.index_hover {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+  background: -webkit-linear-gradient(top, rgba(0, 0, 0, .4), rgba(0, 0, 0, 0));
+}
+
+.header .navbar-center .navbar-title {
+  color: #000
+}
+
+.index_hover .navbar-center .navbar-title {
+  color: #fff
+}
+
+.header.m-navbar:after {
+  display: none;
+}

@@ -1,0 +1,76 @@
+<header class="am-topbar am-topbar-fixed-top">
+    <div class="am-u-lg-12 am-u-lg-centered am-u-md-12 am-u-md-centered am-u-sm-12 am-u-sm-centered">
+        <h1 class="am-topbar-brand"><a href="/"><img src="/static/images/ald-logo.png" class="logo" alt="阿拉丁"></a></h1>
+        <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-secondary am-collapsed" data-am-collapse="{target: '#doc-topbar-collapse-2'}"><span
+                class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></button>
+        <div class="am-topbar-collapse am-collapse" id="doc-topbar-collapse-2">
+            ## <ul class="am-nav am-nav-pills am-topbar-nav">
+            ##     <li name="index"><a href="/"><span>首页</span></a></li>
+            ##     <li name="video"><a href="/video.html"><span>视频教程</span></a></li>
+            ##     <li name="community"><a href="/community.html"><span>社区讨论</span></a></li>
+            ##     <li name="news"><a href="/news/index.html"><span>新闻中心</span></a></li>
+            ##     <li name="download"><a href="/download.html"><span>产品下载</span></a></li>
+            ## </ul>
+            <ul class="am-nav am-nav-pills am-topbar-nav">
+                <li name="index"><a href="/">首页</a></li>
+                <li class="am-dropdown" data-am-dropdown name="aldbim">
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    BIM云平台 <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content box-shadow">
+                        <li><a href="/aldbim/home.html">整体介绍</a></li>
+                        <li><a href="/aldbim/download.html">产品下载</a></li>
+                        <li><a href="/aldbim/video.html">视频中心</a></li>
+                        <li><a href="/aldbim/discuss.html">讨论社区</a></li>
+                    </ul>
+                </li>
+                <li name="map">
+                    <a href="/map/index.html">装修地图</a>
+                </li>
+                <li class="am-dropdown" data-am-dropdown name="scm">
+                    <a href="/scm/index.html">供应链平台</a>
+                </li>
+                <li class="am-dropdown" data-am-dropdown name="partner">
+                    <a class="am-dropdown-toggle" data-am-dropdown-toggle href="javascript:;">
+                    合作伙伴 <span class="am-icon-caret-down"></span>
+                    </a>
+                    <ul class="am-dropdown-content box-shadow">
+                        <li><a href="http://team.aldbim.com/" target="_blank">城市运营商入驻</a></li>
+                        <li name="partner"><a href="/partner/index.html">设计师合伙人入驻</a></li>
+                        <li><a href="http://www.artbim.com/seller/login" target="_blank">供应商入驻</a></li>
+                        <li><a href="http://team.aldbim.com/" target="_blank">装饰公司入驻</a></li>
+                    </ul>
+                </li>
+                <li name="vr"><a target="_blank" href="http://vr.art1001.com"><span>VR云平台</span></a></li>
+                <li name="bbs"><a target="_blank" href="http://bbs.art1001.com"><span>社区</span></a></li>
+                <li name="news"><a href="/news/index.html"><span>新闻中心</span></a></li>
+                <li name="case"><a href="/case/index.html"><span>精品案例</span></a></li>
+            </ul>
+            <div class="am-topbar-right">
+                <div class="user-info">
+                    <a href="/aldbim/discuss/my.html">
+                        <img class="user_avatar" alt="头像">
+                    </a>
+                    <a class="user"><span class="user_name"></span>&nbsp;<span class="quit" id="quit">[退出]</span></a>
+                </div>
+                <ul class="aldbim-topbar-btn unlogin">
+                    <li id="goLogin"><a href="javascript:void(0);">登 录</a></li>
+                    <li><a href="/register.html" target="_blank">注 册</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</header>
+
+## kefu
+<div id="kefu" class="kefu">
+    <i></i><span>联系客服</span>
+</div>
+
+#block("login-dialog")
+    #widget("/page/login/login-dialog.vm")
+#end
+
+#script()
+require(['widget/sidebarmenus/sidebarmenus']);
+#end

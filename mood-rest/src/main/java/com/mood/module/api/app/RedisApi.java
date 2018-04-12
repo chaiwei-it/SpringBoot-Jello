@@ -19,13 +19,13 @@ import org.springframework.web.bind.annotation.RestController;
 public class RedisApi extends BaseApi<App> {
 
     @Autowired
-    private CacheService cacheService;
+    private CacheService simpleCacheService;
 
     @GetMapping("")
     public String getApps(){
-        cacheService.set("test","123",1000);
-//        cacheService.del("test");
-        return cacheService.get("test").toString();
+        simpleCacheService.set("test","123",1000);
+        simpleCacheService.del("test");
+        return simpleCacheService.get("test").toString();
     }
 
 }

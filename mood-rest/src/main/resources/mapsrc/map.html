@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" style="display:none">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>壹仟零壹艺城市装修地图</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="modules/css/less/ydui.less">
+    <link rel="stylesheet" href="modules/css/map.css">
+  </head>
+
+  <body>
+    <img src="/modules/images/x.png" id="mapIcon" style="display:none">
+    <div class="g-flexview">
+      <header class="m-navbar">
+        <a href="index.html" class="navbar-item"><i class="back-ico"></i>返回</a>
+        <div class="navbar-center">
+          <span class="navbar-title">城市装修地图</span>
+        </div>
+      </header>
+
+      <ul class="m-grids-2">
+        <li class="grids-item">
+          <input type="text" class="cell-input" readonly id="J_Address" placeholder="地区">
+          <i class="down"></i>
+        </li>
+        <li class="grids-item">
+          <input type="text" class="cell-input" readonly id="J_ShowActionSheet" placeholder="商家信息">
+          <i class="down"></i>
+        </li>
+      </ul>
+
+
+      <div class="g-scrollview">
+        <div id="allmap"></div>
+      </div>
+
+      <div class="m-actionsheet" id="J_ActionSheet">
+        <div class="m-cell">
+          <label class="cell-item">
+            <span class="cell-left">全部</span>
+            <label class="cell-right">
+              <input type="radio" value="" data-val="全部" name="radio" checked>
+              <i class="cell-radio-icon"></i>
+            </label>
+          </label>
+          <label class="cell-item">
+            <span class="cell-left">运营商</span>
+            <label class="cell-right">
+              <input type="radio" value="1" data-val="运营商" name="radio">
+              <i class="cell-radio-icon"></i>
+            </label>
+          </label>
+          <label class="cell-item ">
+            <span class="cell-left">供应商</span>
+            <label class="cell-right">
+              <input type="radio" value="2" data-val="供应商" name="radio">
+              <i class="cell-radio-icon"></i>
+            </label>
+          </label>
+        </div>
+        <a href="javascript:;" class="actionsheet-action J_Cancel" id="J_Cancel">确定</a>
+      </div>
+      <div id="mapOut" class="map-out">
+        <div class="mask"></div>
+        <div class="out">
+          <header class="m-navbar">
+            <div class="navbar-center">
+              <span class="navbar-title">详情信息</span>
+            </div>
+            <a class="navbar-item" id="close">关闭</a>
+          </header>
+          <div class="g-scrollview">
+            <div class="content">
+              <div class="xf-xq" id="tpl">map</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=G8f81AnECGpHnIz7QmvUiwVreCkZuuzj"></script>
+    <script src="lib/mod.js"></script>
+    <script>
+      require.async('modules/app/map.es');
+    </script>
+  </body>
+
+</html>

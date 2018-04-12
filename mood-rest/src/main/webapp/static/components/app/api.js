@@ -1,0 +1,1 @@
+define("components/app/api",["require","exports","module"],function(e,i,r){var o="",p={login:o+"/api/v1/login",register:o+"/api/v1/register"};r.exports=p});

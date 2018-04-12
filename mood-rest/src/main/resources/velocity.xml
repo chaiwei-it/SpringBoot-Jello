@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="velocityConfig"
+          class="org.springframework.web.servlet.view.velocity.VelocityConfigurer">
+        <property name="resourceLoaderPath" value="/WEB-INF/views" />
+        <property name="velocityPropertiesMap">
+            <props>
+                <prop key="input.encoding">UTF-8</prop>
+                <prop key="output.encoding">UTF-8</prop>
+                <prop key="userdirective">com.baidu.fis.velocity.directive.Html, com.baidu.fis.velocity.directive.Head, com.baidu.fis.velocity.directive.Body, com.baidu.fis.velocity.directive.Require, com.baidu.fis.velocity.directive.Script, com.baidu.fis.velocity.directive.Style, com.baidu.fis.velocity.directive.Uri, com.baidu.fis.velocity.directive.Widget, com.baidu.fis.velocity.directive.Block, com.baidu.fis.velocity.directive.Extends</prop>
+                <prop key="directive.set.null.allowed">true</prop>
+                <prop key="velocimacro.library.autoreload">false</prop>
+                <prop key="velocimacro.context.localscope">true</prop>
+                <prop key="file.resource.loader.cache">true</prop>
+                <prop key="file.resource.loader.modificationCheckInterval">60</prop>
+                <prop key="resource.manager.defaultcache.size">0</prop>
+            </props>
+        </property>
+    </bean>
+
+    <!-- velocity视图解析器 -->
+    <bean id="velocityViewResolver" class="org.springframework.web.servlet.view.velocity.VelocityViewResolver">
+        <property name="order" value="0"/>
+        <property name="contentType" value="text/html;charset=UTF-8"/>
+        <property name="cache" value="false"/>
+        <property name="suffix" value=".vm"/>
+        <property name="exposeSpringMacroHelpers" value="true" /><!--是否使用spring对宏定义的支持-->
+        <property name="exposeSessionAttributes" value="true" /><!--是否开放request属性-->
+        <property name="requestContextAttribute" value="request"/><!--request属性引用名称-->
+        <property name="dateToolAttribute" value="dateTool"/>
+        <property name="numberToolAttribute" value="numberTool"/>
+        <property name="toolboxConfigLocation" value="/WEB-INF/toolbox.xml"/>
+    </bean>
+
+</beans>
