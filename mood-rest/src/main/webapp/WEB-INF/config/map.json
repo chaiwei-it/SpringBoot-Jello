@@ -231,7 +231,7 @@
             }
         },
         "page/login/login.js": {
-            "uri": "/static/page/login/login_829d785.js",
+            "uri": "/static/page/login/login_bc27339.js",
             "type": "js",
             "extras": {
                 "moduleId": "page/login/login"
@@ -410,6 +410,17 @@
             "uri": "/widget/footer/footer.vm",
             "type": "vm"
         },
+        "widget/header/header.js": {
+            "uri": "/static/widget/header/header_707ec07.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "widget/header/header"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
         "widget/header/header.scss": {
             "uri": "/static/widget/header/header.css",
             "type": "css",
@@ -417,7 +428,12 @@
         },
         "widget/header/header.vm": {
             "uri": "/widget/header/header.vm",
-            "type": "vm"
+            "type": "vm",
+            "extras": {
+                "async": [
+                    "widget/header/header.js"
+                ]
+            }
         },
         "widget/navigation/navigation.vm": {
             "uri": "/widget/navigation/navigation.vm",

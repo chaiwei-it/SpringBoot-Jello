@@ -47,10 +47,10 @@ public class LoginApi extends BaseController {
             return setModelMap(modelMap,HttpCode.LOGIN_DISABLED);
         }
         //验证是否已经登录
-        String loginStatus = cacheService.getString(UserContants.LOGINSTATUS + username);
-        if(loginStatus != null){
-            return setModelMap(modelMap,HttpCode.LOGIN_ONLINE);
-        }
+//        String loginStatus = cacheService.getString(UserContants.LOGINSTATUS + username);
+//        if(loginStatus != null){
+//            return setModelMap(modelMap,HttpCode.LOGIN_ONLINE);
+//        }
         //验证用户是否存在
         User user = userService.selectByUsername(username);
         if(user == null){
@@ -69,7 +69,7 @@ public class LoginApi extends BaseController {
             return setModelMap(modelMap, HttpCode.LOGIN_ERROR, loginNumber);
         }
         cacheService.set(UserContants.LOGINSTATUS + username, "1", 1000000);
-        return setModelMap(modelMap, HttpCode.SUCCESS);
+        return setModelMap(modelMap, HttpCode.SUCCESS, user);
 
     }
 
