@@ -1,0 +1,20 @@
+## 首页布局
+#extends("./frame.vm")
+
+    #block("body")
+        #block("header")
+            #widget("/widget/header/header.vm")
+        #end
+
+        <div class="c-center">
+    			<div class="c-content">
+    				#block("content")#end
+    			</div>
+        </div>
+        
+
+        #block("footer")
+            #widget("/widget/footer/footer.vm")
+        #end
+    #end
+#end

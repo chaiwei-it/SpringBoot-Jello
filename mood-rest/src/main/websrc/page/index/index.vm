@@ -1,0 +1,10 @@
+#extends("/page/layout/front.vm")
+
+#block("content")
+
+<div id="index">
+    首页
+</div>
+
+#end## end of body
+#end

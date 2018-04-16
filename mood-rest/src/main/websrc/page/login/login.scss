@@ -1,0 +1,125 @@
+@import "_function";
+
+ /*login body*/
+
+
+
+.am-box{
+	background: #f7f7f7;
+	
+}
+.ly-u{
+	height: 100%;
+	border: 1px solid #d3d3d3;
+    background:white;
+}
+
+.ly-imgs{
+	padding-right: 18px;
+	min-height:600px;
+	width: 45%;
+	border-right: 1px solid #d3d3d3;
+	text-align: center;
+	float: left;
+    vertical-align: middle;
+    position: relative; 
+   
+}
+.ly-imgs img {
+	  box-sizing: border-box;
+	  /* v2.3 开始移除以下代码，详见 #502 */
+	  /* max-width: 100%;
+	  height: auto;*/
+	  vertical-align: middle;
+	  border: 0;
+	  position: absolute;
+      top:50%; 
+      left:48%;
+      transform: translate(-50%,-50%);
+ }
+
+.ly-inputs{
+	float: left;
+	height: 100%;
+	width: 55%;
+    box-sizing: border-box;
+}
+.ly-input{
+	width: 100%;
+    box-sizing: border-box;
+}
+
+.ly-input h3{
+	margin-top: 40px;
+    text-align: center;
+    font-weight: normal;
+    height: 58px;
+    line-height: 58px;
+    border-bottom: 2px solid #c3c3c3;
+}
+
+.am-form-group{
+	 margin-top: 30px;
+}
+
+.am-form-group input{
+	width: 100%;
+    height: 50px;
+    border: 1px solid #d7d7d7;
+    border-radius: 3px;
+    padding-left: 18px;
+    font-size: 16px;
+}
+
+.am-checkbox{
+	overflow: hidden;
+    margin-top: 12px;
+}
+
+
+.am-checkbox p {
+    float: left;
+}
+.am-checkbox p label{
+	font-size: 16px;
+}
+
+.am-checkbox a{
+	float: right;
+}
+
+
+
+
+
+.btn input{
+	display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    background: white;
+    color: #5caab4;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #5caab4;
+    border-radius: 3px;
+    margin: 28px 0 0;
+}
+
+
+.btn a{
+	display: inline-block;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    color: #5caab4;
+    line-height: 50px;
+    text-align: center;
+    border: 1px solid #5caab4;
+    border-radius: 3px;
+    margin: 28px 0 0;
+
+}
+

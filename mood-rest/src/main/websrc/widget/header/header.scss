@@ -1,0 +1,147 @@
+@import "_function";
+
+/* 头部 */
+.c-hd {
+  width: 100%;
+  position: absolute;
+  height: 80px;
+  background-color: #222222; 
+}
+
+.c-logo{
+  margin-top: 20px;
+}
+
+.c-logo a{
+  display: block;
+  float: left;
+  font-size: 22px;
+  line-height: 40px;
+  width: 165px;
+  color: #fff;
+  text-indent: -9999px;
+  background: url('../images/logo.png?1444011587') no-repeat left center;
+  -webkit-background-size: 125px 40px;
+  background-size: 125px 40px;
+  margin-right: 20px;
+}
+
+.c-nav ul li {
+  height: 40px;
+  padding: 0 10px;
+  margin: 20px 10px;
+  float: left;
+}
+
+.c-nav ul li a {
+  height: 40px;
+  line-height: 40px;
+}
+
+.c-nav ul li:hover{
+  background-color: #ba1f2e;
+}
+
+.c-user {
+  margin-left: 20px;
+}
+
+.c-user ul {
+  margin: 0;
+}
+
+.c-user ul li {
+  height: 40px;
+  margin: 20px 0;
+  float: left;
+}
+
+.c-user ul li a {
+  height: 40px;
+  line-height: 40px;
+}
+
+
+
+
+
+// .m-hd ul li {
+//   list-style-type: none;
+// }
+// .m-hd .am-container {
+//   position: relative;
+// }
+// .m-hd .am-sticky {
+//   background: #1a1f2a;
+//   padding: 15px 0;
+//   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=95);
+//   opacity: 0.95;
+// }
+// .m-hd .am-header a {
+//   color: #fff;
+// }
+// .m-hd .m-nav a {
+//   color: #fff;
+// }
+// .m-hd .m-nav a:hover {
+//   background: #ba1f2e;
+//   border-radius: 2px;
+//   -webkit-transition: background-color 300ms ease-out, border-color 300ms ease-out;
+//   transition: background-color 300ms ease-out, border-color 300ms ease-out;
+// }
+// .m-hd .am-nav > li.am-active > a, .m-hd .am-nav > li.am-active > a:focus, .m-hd .am-nav > li.am-active > a:hover {
+//   color: #fff;
+//   background-color: #ba1f2e;
+//   cursor: default;
+// }
+// .m-hd .am-dropdown-content {
+//   background: #ba1f2e;
+//   border: none;
+// }
+// .m-hd .am-dropdown-content > li > a:hover {
+//   color: #fff;
+// }
+// .m-hd .am-dropdown-content:after, .m-hd .am-dropdown-content:before {
+//   border: 8px dashed #ba1f2e;
+// }
+// .m-hd .am-dropdown-content > .am-active > a,
+// .m-hd .am-dropdown-content > .am-active > a:focus,
+// .m-hd .am-dropdown-content > .am-active > a:hover {
+//   background-color: #d22e3e;
+// }
+
+
+
+// .ly-rg li{
+//   float: left;
+//   line-height: 100px;
+// }
+
+.user-info {
+    display: none;
+    padding: 10px;
+    cursor: pointer;
+    color: #fff;
+    .user {
+        vertical-align: middle;
+        .quit {
+            color: $font-light;
+        }
+        .user_name {
+            display: inline-block;
+            max-width: 80px;
+            height: 22px;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            line-height: 31px;
+        }
+    }
+    img {
+        width: 40px;
+        height: 40px;
+        vertical-align: middle;
+        margin-right: 10px;
+        border-radius: 20px;
+    }
+}

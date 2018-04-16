@@ -1,0 +1,69 @@
+<header class="c-hd">
+    <section data-am-sticky class="am-show-md-up">
+      <div class="am-container">
+        <div class="am-fl c-logo">
+          <a href="/" rel="nofollow" class=""><i class="am-icon-spinner"></i>CJ Note</a>
+        </div> 
+        <div class="am-fr"> 
+          <div class="am-fl c-nav">
+            <ul>
+              <li><a href="/" rel="nofollow">首页</a></li>
+              <li><a href="/fuwu.html" rel="nofollow">日记</a></li>
+              <li><a href="/zixun.html" rel="nofollow">分类</a></li>
+              <li><a href="/about.html" rel="nofollow">关于我们</a></li>
+              <li><a href="/contact.html" rel="nofollow">联系我们</a></li>
+            </ul>
+          </div>
+          <div class="am-fl c-user">
+            <div class="user-info">
+              <!-- <a href="/aldbim/discuss/my.html">
+                  <img class="user_avatar" alt="头像">
+              </a> -->
+              <a class="user"><span class="user_name"></span>&nbsp;<span class="quit" id="quit">[退出]</span></a>
+            </div>
+            <ul class="aldbim-topbar-btn unlogin">
+              <li><a href="/login">登录</a></li>
+              <li><a href="/register">/注册</a></li>
+            </ul>
+          </div>
+        </div>
+          
+      </div>
+    </section>
+
+    <nav data-am-widget="header" class="am-header am-show-sm-only">
+      <div class="am-header-left am-header-nav">
+        <a href="/" rel="nofollow">
+          <i class="am-header-icon am-icon-home"></i> 首页
+        </a>
+      </div>
+      <h1 class="am-header-title">
+        <a href="/" rel="nofollow">CJ Note</a>
+      </h1>
+      <div class="am-header-right am-header-nav">
+        <a href="#right-link" class="" data-am-offcanvas="{target: '#r-nav'}">
+          <i class="am-header-icon am-icon-bars"></i> 菜单
+        </a>
+      </div>
+    </nav>
+
+    <!-- 侧边栏内容 -->
+    <div id="r-nav" class="am-offcanvas">
+      <div class="am-offcanvas-bar am-offcanvas-bar-flip">
+        <nav class="am-offcanvas-content">
+            <a href="/" rel="nofollow"><span class="logo"></span></a>
+            <p><i class="am-icon-home"></i> <a href="/" rel="nofollow">网站首页</a></p>
+            <p><i class="am-icon-desktop"></i> <a href="/anli.html" rel="nofollow">案例展示</a></p>
+            <p><i class="am-icon-cogs"></i> <a href="/fuwu.html" rel="nofollow">服务内容</a></p>
+            <p><i class="am-icon-credit-card"></i> <a href="/zixun.html" rel="nofollow">最新动态</a></p>
+
+            <p><i class="am-icon-user"></i> <a href="/about.html" rel="nofollow">关于我们</a></p>
+            <p><i class="am-icon-qq"></i> <a href="/contact.html" rel="nofollow">联系我们</a></p>
+        </nav>
+      </div>
+    </div>
+</header>
+
+#script()
+  require(['./header']);
+#end
