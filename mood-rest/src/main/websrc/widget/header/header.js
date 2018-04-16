@@ -33,12 +33,12 @@ $(function(){
     $('.unlogin').hide()
     $('.user-info').show();
     // 头像展示
-    // if (user.avatar.indexOf('http://') !== -1) {
-    //   $('.user_avatar').prop('src', user.avatar)
-    // } else {
-    //   $('.user_avatar').prop('src', api.IMAGE_DOMAIN + user.avatar)
-    // }
-    console.log(user.username)
+    if (user.image.indexOf('http://') !== -1) {
+      $('.user_avatar').prop('src', user.image)
+    } else {
+      // $('.user_avatar').prop('src', api.IMAGE_DOMAIN + user.avatar)
+    }
+    // console.log(user.username)
     $('.user_name').text(user.username)
   }
 
@@ -47,11 +47,7 @@ $(function(){
   *  @param String 退出提示语
   */
   $("#quit").click(function(){
-    var vm = this
-    this.$confirm('您确定要退出登录吗？', {
-      type: 'warning'
-    }).then(function() {
-    // vm.$message('即将退出登录')
+    var confirmCallback = function(result){
       var callback = function(result){
         if (result.code !== 200) {
           vm.message(result.message, 'warning')
@@ -61,15 +57,41 @@ $(function(){
         app.remove('user')
 
         // 提示消息
-        vm.message('退出登录', 'success', function() {
+        app.message('退出登录', 'success', function() {
           // 刷新
           setTimeout(function() {
             window.location.reload()
           }, 1300)
         })
       }
-      app.ajax(api.loginout, 'post', {}, callback)
-    })
+      app.ajax(api.logout, 'post', {}, callback)
+    }
+    app.confirm({title:'退出登录',message:'您确定要退出登录吗？',callback:confirmCallback})
+
+
+    // var vm = this
+    // this.$confirm('您确定要退出登录吗？', {
+    //   type: 'warning'
+    // }).then(function() {
+    // // vm.$message('即将退出登录')
+    //   var callback = function(result){
+    //     if (result.code !== 200) {
+    //       vm.message(result.message, 'warning')
+    //       return false
+    //     }
+    //     // 删除用户信息
+    //     app.remove('user')
+
+    //     // 提示消息
+    //     vm.message('退出登录', 'success', function() {
+    //       // 刷新
+    //       setTimeout(function() {
+    //         window.location.reload()
+    //       }, 1300)
+    //     })
+    //   }
+    //   app.ajax(api.loginout, 'post', {}, callback)
+    // })
   })
 })
 

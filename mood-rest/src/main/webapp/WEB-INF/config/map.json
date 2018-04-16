@@ -102,12 +102,30 @@
             "deps": [
                 "components/jquery/jquery-3.3.1.min.js",
                 "components/lodash/index.js",
-                "components/amaze/assets/js/amazeui.min.js"
+                "components/amaze/assets/js/amazeui.min.js",
+                "components/jquery-validation-1.14.0/jquery.validate.min.js"
             ]
         },
         "components/css/app.css": {
             "uri": "/static/components/css/app.css",
             "type": "css"
+        },
+        "components/jquery-validation-1.14.0/additional-methods-common.js": {
+            "uri": "/static/components/jquery-validation-1.14.0/additional-methods-common.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation-1.14.0/additional-methods-common"
+            }
+        },
+        "components/jquery-validation-1.14.0/jquery.validate.min.js": {
+            "uri": "/static/components/jquery-validation-1.14.0/jquery.validate.min.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "components/jquery-validation-1.14.0/jquery.validate.min"
+            },
+            "deps": [
+                "components/jquery/jquery.js"
+            ]
         },
         "components/jquery/jquery-3.3.1.min.js": {
             "uri": "/static/components/jquery/jquery-3.3.1.min.js",
@@ -230,8 +248,60 @@
                 "isPage": true
             }
         },
+        "page/login - 副本 (2)/login.js": {
+            "uri": "/static/page/login - 副本 (2)/login_c69bb45.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/login - 副本 (2)/login"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "page/login - 副本 (2)/login.scss": {
+            "uri": "/static/page/login - 副本 (2)/login.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/login - 副本 (2)/login.vm": {
+            "uri": "/page/login - 副本 (2)/login.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "page/login - 副本 (2)/login.js"
+                ]
+            }
+        },
+        "page/login - 副本/login1.js": {
+            "uri": "/static/page/login - 副本/login1_a147ac5.js",
+            "type": "js",
+            "extras": {
+                "moduleId": "page/login - 副本/login1"
+            },
+            "deps": [
+                "components/app/app.js",
+                "components/app/api.js"
+            ]
+        },
+        "page/login - 副本/login1.scss": {
+            "uri": "/static/page/login - 副本/login1.css",
+            "type": "css",
+            "pkg": "p0"
+        },
+        "page/login - 副本/login1.vm": {
+            "uri": "/page/login - 副本/login1.vm",
+            "type": "vm",
+            "extras": {
+                "isPage": true,
+                "async": [
+                    "login"
+                ]
+            }
+        },
         "page/login/login.js": {
-            "uri": "/static/page/login/login_bc27339.js",
+            "uri": "/static/page/login/login_aa99e82.js",
             "type": "js",
             "extras": {
                 "moduleId": "page/login/login"
@@ -292,39 +362,6 @@
                 "async": [
                     "page/user/login.js"
                 ]
-            }
-        },
-        "page/velocity/index.vm": {
-            "uri": "/page/velocity/index.vm",
-            "type": "vm",
-            "extras": {
-                "isPage": true
-            }
-        },
-        "page/velocity/jello.vm": {
-            "uri": "/page/velocity/jello.vm",
-            "type": "vm",
-            "extras": {
-                "isPage": true
-            }
-        },
-        "page/velocity/news.scss": {
-            "uri": "/static/page/velocity/news.css",
-            "type": "css",
-            "pkg": "p0"
-        },
-        "page/velocity/tools.vm": {
-            "uri": "/page/velocity/tools.vm",
-            "type": "vm",
-            "extras": {
-                "isPage": true
-            }
-        },
-        "page/velocity/variables.vm": {
-            "uri": "/page/velocity/variables.vm",
-            "type": "vm",
-            "extras": {
-                "isPage": true
             }
         },
         "static/js/esl.js": {
@@ -411,7 +448,7 @@
             "type": "vm"
         },
         "widget/header/header.js": {
-            "uri": "/static/widget/header/header_707ec07.js",
+            "uri": "/static/widget/header/header_2226603.js",
             "type": "js",
             "extras": {
                 "moduleId": "widget/header/header"
@@ -475,10 +512,11 @@
                 "widget/header/header.scss",
                 "widget/sidebarmenus/sidebarmenus.scss",
                 "page/index/index.scss",
+                "page/login - 副本 (2)/login.scss",
+                "page/login - 副本/login1.scss",
                 "page/login/login.scss",
                 "page/news/news.scss",
-                "page/user/login.scss",
-                "page/velocity/news.scss"
+                "page/user/login.scss"
             ]
         }
     }

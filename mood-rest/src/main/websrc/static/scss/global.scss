@@ -13,10 +13,17 @@ li {
   list-style-type: none;
 }
 
+// li:hover {
+//   color: #ffffff;
+// }
+
 a {
   color: #ffffff;
 }
 
+a:hover {
+  color: #ffffff;
+}
 
 // 整体布局
 .c-center {
@@ -42,6 +49,66 @@ a {
     margin: 0 auto;
   }
 }
+
+//确认框
+.clearfix:after{
+  content: '';
+  display: table;
+  width: 100%;
+  clear: both;
+}
+.myModa{
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right:0;
+  background: rgba(0,0,0,0.2); 
+}
+.myModa .myAlertBox{
+  width: 302px;
+  border-radius: 5px;
+  border: 1px solid #d9d9d9;
+  background: #fff;
+  overflow: hidden;
+  margin: 0 auto; 
+}
+.myModa .myAlertBox h6{
+  background: #f2f2f2;
+  padding: 10px;
+  line-height: 20px;
+  font-size: 16px;
+  text-align: center;
+}
+.myModa .myAlertBox p{
+  padding: 20px;
+  line-height: 26px;
+  font-size: 14px;
+  color: #808080;
+}
+.myModa .myAlertBox .btn{
+  cursor: pointer; 
+  width: 80px;
+  line-height: 36px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 20px; 
+  background: #D9D9D9;
+}
+.myModa .myAlertBox .col2{
+  padding: 0 20px;
+}
+.myModa .myAlertBox .col2 .col{
+  width:120px;
+  float: left;
+}
+.myModa .myAlertBox .col2 .col .btn{
+  width: 100%;
+}
+
+
 
 
 

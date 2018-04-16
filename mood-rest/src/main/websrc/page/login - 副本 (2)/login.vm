@@ -1,0 +1,72 @@
+#extends("/page/layout/front.vm")
+
+
+#block("content")
+
+<div class="am-box">
+  <div class="ly-by">
+    <div class="ly-u am-u-lg-8 am-u-lg-centered am-u-md-10 am-u-md-centered am-u-sm-10 am-u-sm-centered am-cf">
+      <div class="ly-imgs">
+        <img src="../static/images/login/box.png" class="am-img-responsive" alt="login">
+      </div>
+      <div class="ly-inputs">
+        <div class="ly-input">
+          <div class="am-u-lg-8 am-u-lg-centered am-u-md-10 am-u-md-centered am-u-sm-10 am-u-sm-centered">
+            <form class="am-form" id="doc-vld-msg">
+              <fieldset>
+                <p>
+                  <label for="firstname">名字</label>
+                  <input id="firstname" name="firstname" type="text">
+                </p>
+                <p>
+                  <label for="lastname">姓氏</label>
+                  <input id="lastname" name="lastname" type="text">
+                </p>
+
+              <!-- <div class="h3">
+                <h3>账户登录</h3>
+              </div>   
+              <div class="am-form-group">
+                <input type="text" id="username" name="username" data-validation-message="请输入手机号" placeholder="手机号/邮箱" required/>
+              </div>
+              <div class="am-form-group">
+                <input type="password" maxlength="16" minlength="6" data-validation-message="至少填写六个字符" id="password" name="password" placeholder="密码">
+              </div> -->
+                <div class="am-checkbox am-cf">
+                  <p>
+                   <input type="checkbox">
+                   <label for="che">记住我</label>
+                 </p>
+                 <a href="#">忘记密码</a>
+               </div>
+               <div class="btn">
+                <!-- <button href="javascript:void(0)" id="ly-login">登录</button> -->
+                <input type="submit" id="login" value="登录">
+                <a href="#">立即注册</a>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+#script()
+require(['login']);
+#end
+
+
+
+
+
+
+#end## end of body
+#end
+
+
+
+
+
+

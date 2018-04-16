@@ -15,13 +15,20 @@
             </ul>
           </div>
           <div class="am-fl c-user">
-            <div class="user-info">
-              <!-- <a href="/aldbim/discuss/my.html">
+            <ul class="user-info">
+              <li>
+                <a href="/aldbim/discuss/my.html">
                   <img class="user_avatar" alt="头像">
-              </a> -->
-              <a class="user"><span class="user_name"></span>&nbsp;<span class="quit" id="quit">[退出]</span></a>
-            </div>
-            <ul class="aldbim-topbar-btn unlogin">
+                </a>
+              </li>
+              <li>
+                <a class="user">
+                  <span class="user_name"></span>&nbsp;
+                  <span class="quit" id="quit">[退出]</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="unlogin">
               <li><a href="/login">登录</a></li>
               <li><a href="/register">/注册</a></li>
             </ul>

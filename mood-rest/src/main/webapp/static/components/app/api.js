@@ -1,1 +1,1 @@
-define("components/app/api",["require","exports","module"],function(e,i,r){var o="",p={login:o+"/api/v1/login",register:o+"/api/v1/register"};r.exports=p});
+define("components/app/api",["require","exports","module"],function(e,o,i){var p="",r={login:p+"/api/v1/login",logout:p+"/api/v1/logout",register:p+"/api/v1/register"};i.exports=r});

@@ -75,8 +75,8 @@ public class LoginApi extends BaseController {
 
 
     @PostMapping("logout")
-    public Object  logout(ModelMap model, HttpServletRequest request){
-        return null;
+    public Object logout(ModelMap modelMap, HttpServletRequest request){
+        return setModelMap(modelMap, HttpCode.SUCCESS);
     }
 
     /**
