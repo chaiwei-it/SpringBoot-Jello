@@ -3,8 +3,12 @@
 #block("content")
 
 <div id="index">
-    首页
+    <input type="button" id="tan" value="测试"> 
 </div>
+
+#script()
+require(['index']);
+#end
 
 #end## end of body
 #end

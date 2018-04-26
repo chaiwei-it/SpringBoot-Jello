@@ -266,6 +266,11 @@ var app = function (self) {
       })
   }
 
+  self.loading = function () {
+    var top=$(window).height()*0.3;
+    $('body').append('<div class="myModa"><div class="myAlertBox" style="margin-top:'+top+'px">加载中</div></div>');
+  }
+
   /**
    * 格式化数字
    * @param num 要格式化的值
